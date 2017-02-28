@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>round-circle</title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		.wrap {
+			margin: 20px auto;
+			padding: 20px;
+			width: 700px;
+			background-color: #f6f8f8;
+			overflow: hidden;
+		}
+		.content,.ring {
+			position: relative;
+			margin: 0 auto;
+			width: 200px;
+			height: 200px;
+			box-sizing: border-box;
+		}
+		.ring {
+			position: absolute;
+			top:0;
+			left:0;
+			border-radius: 50%;
+			border: 3px solid #FF1493;
+			border-top-color: transparent;
+			animation: ring 1s infinite ease-in-out;
+		}
+		@keyframes ring {
+			0% {
+				transform: rotate(0deg);
+			}
+			100% {
+				transform: rotate(-360deg);
+			}
+		}
+		.full-circle,.left-circle,.right-circle {
+			position: absolute;
+			top:50%;
+			left:50%;
+			margin-left: -80px;
+			margin-top: -80px;
+			width: 0;
+			height: 0;
+			border-radius: 80px;			
+		}
+		.full-circle {
+			border: 80px solid #FF1493;
+			border-right-color: #FF69B4;
+			border-top-color: #FF69B4;
+			transform: rotate(45deg);
+		}
+		.left-circle {
+			border: 80px solid #FF69B4;
+			border-right-color: transparent;
+			border-top-color: transparent;
+			transform: rotate(45deg);
+			 animation: left 2s linear infinite; 
+		}
+		@keyframes left {
+			0% {
+				transform: rotate(45deg);
+			}
+			100% {
+				transform: rotate(-315deg); 
+			}
+		}
+		.right-circle {
+			border: 80px solid #FF1493;
+			border-bottom-color: transparent;
+			border-left-color: transparent;
+			transform: rotate(45deg);
+			  animation: right 2s linear infinite;  
+		}
+		/* @keyframes right {
+			0% {
+				transform: rotate(0deg);
+			}
+			100% {
+				transform: rotate(-360deg); 
+			}
+		} */
+	</style>
+</head>
+<body>
+<div class="wrap">
+	<div class="content">
+		<div class="ring"></div>
+		<div class="full-circle"></div>
+		<div class="left-circle"></div>
+		<div class="right-circle"></div>
+	</div>
+</div>
+</body>
+</html>
