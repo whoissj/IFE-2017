@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML/CSS-task2</title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+        body {
+            background-color: #f0f3f4;
+            letter-spacing: 2px;
+            font-family: "Microsoft YaHei UI";
+        }
+        .wrap {
+            width: 100%;
+            height: 100%;
+        }
+		.header {
+			width: 100%;
+			height: 70px;
+			line-height: 70px;
+			background-color: #2d2a2a;
+			color:#fff;
+		}
+		.header h1 {
+			float: left;
+			margin-left: 15px;			
+		}
+		.header ul {		
+			float: right;
+			margin-right: 15px;
+		}
+		.header li {
+			display: inline-block;
+		}
+        .header li a {
+            color: #fff;
+        }
+        .content {
+            width: 100%;
+            max-width: 1200px;
+            margin: 15px auto;
+            background-color: #fff;
+            padding: 15px;
+            border: 1px solid #edf1f2;
+            box-shadow:1px 1px 1px 1px #ccc;
+        }
+        h2.title,h3.title,h5.title,.text,.sidebar-title {
+            margin-top: 15px;
+        }
+        h3.title,h5.title {
+            color:#c3c3c3;
+        }
+        h5.title {
+            font-weight: normal;
+        }
+        .text {
+            font-size: 16px;
+            text-indent: 34px;
+            line-height: 24px;
+        }
+        .img-box {
+            margin: 15px 50px;
+            width: 300px;
+            padding-top: 0;
+            padding-left: 15px;
+            padding-bottom: 15px;
+            padding-right: 15px;
+            border: 1px solid #edf1f2;
+            box-shadow:1px 1px 1px 1px #ccc;
+            text-align: center;
+        }
+        .content img {
+            width: 100%;
+            margin-top: 15px;
+        }
+        .ranking {
+            margin: 15px 30px;
+        }
+        .sidebar-title {
+            border-left: 3px solid #ccc;
+            padding-left: 15px;
+        }
+        .form {
+            width: 50%;
+            margin:15px auto;
+        }
+        .form .form-group{
+            margin-top:15px;
+        }
+        .form-group label {
+            display: inline-block;
+            width: 130px;
+        }
+        .form-group label span {
+            float: right;
+        }
+        .form-group select,
+        .form-group input[type="email"],
+        .form-group input[type="text"],
+        .form-group input[type="password"]{
+            padding: 3px 5px;
+        }
+        .form-group input[type="radio"],
+        .form-group input[type="checkbox"]{
+            margin-right: 10px;
+        }
+        .introduce {
+            vertical-align: top;
+        }
+        .submit {
+            margin-top: 15px;
+            text-align: center;
+        }
+        .submit button {
+            color: #fff;
+            background-color: #23b7e5;
+            border-color: #23b7e5;
+            font-weight: bold;
+            font-size: 22px;
+            padding: 10px 20px;
+            border-radius: 8px;
+            outline: none;
+        }
+        .footer {
+            width: 100%;
+            height: 60px;
+            line-height: 60px;
+            background-color: #2d2a2a;
+            color: #fff;
+            text-align: center;
+        }
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .table td,table th {
+            border: solid #ccc 1px;
+            padding: 5px;
+        }
+        .table th {
+            background-color: #2d2a2a;
+            color: #fff;
+        }
+	</style>
+</head>
+<body>
+<div class="wrap">
+    <div class="header">
+        <h1>网站一级标题</h1>
+        <ul>
+            <li><a href="">导航链接一</a></li>
+            <li><a href="">导航链接二</a></li>
+            <li><a href="">导航链接三</a></li>
+            <li><a href="">导航链接四</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h2 class="title">文章一级标题</h2>
+        <h3 class="title">文章二级标题</h3>
+        <h5 class="title"><span>文章作者</span>   <span>文章发表时间</span></h5>
+        <p class="text">重要说明 百度前端技术学院的课程任务是由百度前端工程师专为对前端不同掌握程度的同学设计。我们尽力保证课程内容的质量以及学习难度的合理性，但即使如此，真正决定课程效果的，还是你的每一次思考和实践。 课程多数题目的解决方案都不是唯一的，这和我们在实际工作中的情况也是一致的。因此，我们的要求不仅仅是实现设计稿的效果，更是要多去思考不同的解决方案，评估不同方案的优劣，然后使用在该场景下最优雅的方式去实现。
+            <a href="http://www.baidu.com" target="blank">www.baidu.com</a><b>百度前端技术学院</b>
+        </p>
+    </div>
+
+    <div class="content">
+        <h2 class="title">图片</h2>
+
+        <div class="img-box">
+            <h5 class="title">好看的图片</h5>
+            <img src="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1488340369&di=6f51567776732899baddb91e1ed7ee87&src=http://pic1.cxtuku.com/00/10/34/b328ffd318c4.jpg" alt="">
+        </div>
+        <div class="img-box">
+            <h5 class="title">好看的图片</h5>
+            <img src="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1488340369&di=6f51567776732899baddb91e1ed7ee87&src=http://pic1.cxtuku.com/00/10/34/b328ffd318c4.jpg" alt="">
+        </div>
+        <div class="img-box">
+            <h5 class="title">好看的图片</h5>
+            <img src="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1488340369&di=6f51567776732899baddb91e1ed7ee87&src=http://pic1.cxtuku.com/00/10/34/b328ffd318c4.jpg" alt="">
+        </div>
+        <div class="img-box">
+            <h5 class="title">好看的图片</h5>
+            <img src="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1488340369&di=6f51567776732899baddb91e1ed7ee87&src=http://pic1.cxtuku.com/00/10/34/b328ffd318c4.jpg" alt="">
+        </div>
+        <div class="img-box">
+            <h5 class="title">好看的图片</h5>
+            <img src="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1488340369&di=6f51567776732899baddb91e1ed7ee87&src=http://pic1.cxtuku.com/00/10/34/b328ffd318c4.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="content">
+        <h2 class="title">文章一级标题</h2>
+        <h3 class="title">文章二级标题</h3>
+        <h5 class="title"><span>文章作者</span>   <span>文章发表时间</span></h5>
+        <p class="text">重要说明 百度前端技术学院的课程任务是由百度前端工程师专为对前端不同掌握程度的同学设计。我们尽力保证课程内容的质量以及学习难度的合理性，但即使如此，真正决定课程效果的，还是你的每一次思考和实践。 课程多数题目的解决方案都不是唯一的，这和我们在实际工作中的情况也是一致的。因此，我们的要求不仅仅是实现设计稿的效果，更是要多去思考不同的解决方案，评估不同方案的优劣，然后使用在该场景下最优雅的方式去实现。
+            <a href="http://www.baidu.com" target="blank">www.baidu.com</a><b>百度前端技术学院</b>
+        </p>
+        <ol class="ranking">
+            <li>排名一</li>
+            <li>排名二</li>
+            <li>排名三</li>
+        </ol>
+        <table class="table" cellpadding="5" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>表头</th>
+                    <th>表头</th>
+                    <th>表头</th>
+                    <th>表头</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">大的</td>
+                    <td>第一行</td>
+                    <td>第一行</td>
+                    <td>第一行</td>
+                </tr>
+                <tr>
+
+                    <td>第二行</td>
+                    <td>第二行</td>
+                    <td>第二行</td>
+                </tr>
+                <tr >
+                    <td colspan="2">第三行</td>
+                    <td colspan="2">第三行</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="content">
+        <h2 class="sidebar-title">文章一级标题</h2>
+        <form action="" class="form">
+            <div class="form-group">
+                <label for=""><span>输入你的邮箱：</span></label><input type="email" placeholder="邮箱">
+            </div>
+            <div class="form-group">
+                <label for=""><span>请输入账号：</span></label><input type="text" placeholder="账号">
+            </div>
+            <div class="form-group">
+                <label for=""><span>请输入密码：</span></label><input name="sex" type="password" placeholder="密码">
+            </div>
+            <div class="form-group">
+                <label><span>性别：</span></label><input name="sex" type="radio" value="男"><input name="sex" type="radio" value="女">
+            </div>
+            <div class="form-group">
+               <label for=""><span>城市：</span></label>
+               <select>
+                   <option>北京</option>
+                   <option>上海</option>
+                   <option>深圳</option>
+               </select>
+            </div>
+            <div class="form-group">
+                <label for=""><span>爱好：</span></label>
+                <input type="checkbox">吃饭
+                <input type="checkbox">睡觉
+                <input type="checkbox">打游戏
+            </div>
+            <div class="form-group">
+                <label for="" class=" introduce"><span>自我介绍：</span></label>
+                <textarea name="" id="" cols="30" rows="5"></textarea>
+            </div>
+            <div class="submit"><button>确认提交</button></div>
+        </form>
+    </div>
+
+    <div class="footer"><p>版权所有©</p></div>
+</div>
+</body>
+</html>
