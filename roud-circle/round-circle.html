@@ -59,31 +59,33 @@
 			border-right-color: transparent;
 			border-top-color: transparent;
 			transform: rotate(45deg);
-			 animation: left 2s linear infinite; 
+			animation: left 2s linear infinite; 
+			z-index: 5;
 		}
 		@keyframes left {
-			0% {
-				transform: rotate(45deg);
-			}
-			100% {
-				transform: rotate(-315deg); 
-			}
+			0% { transform: rotate(45deg);}
+			25% { transform: rotate(-135deg);}
+			50% { transform: rotate(-135deg);}
+			75% { transform: rotate(-315deg);}
+			100% { transform: rotate(-315deg);}
 		}
 		.right-circle {
 			border: 80px solid #FF1493;
 			border-bottom-color: transparent;
 			border-left-color: transparent;
 			transform: rotate(45deg);
-			  animation: right 2s linear infinite;  
+			animation: right 2s linear infinite;  
+			z-index: 20;
 		}
-		/* @keyframes right {
-			0% {
-				transform: rotate(0deg);
-			}
-			100% {
-				transform: rotate(-360deg); 
-			}
-		} */
+		@keyframes right {
+			0% { transform: rotate(45deg);}
+			24.99% { transform: rotate(45deg); z-index: 20;}
+			25% { transform: rotate(45deg); z-index: 5;}
+			50% { transform: rotate(-135deg);}
+			74.99% { transform: rotate(-135deg); z-index: 5;}
+			75% { transform: rotate(-135deg); z-index: 20;}
+			100% { transform: rotate(-315deg);}
+		} 
 	</style>
 </head>
 <body>
