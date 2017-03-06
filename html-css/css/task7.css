@@ -3,6 +3,25 @@ body{
     height: 100%;
     font-family: 黑体;
 }
+.v-middle {
+    top:50%;
+    -webkit-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+}
+.h-middle {
+    left:50%;
+    -webkit-transform: translate(-50%,0);
+    -ms-transform: translate(-50%,0);
+    transform: translate(-50%,0);
+}
+.vh-middle {
+    top:50%;
+    left:50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
 .wrap {
     width: 100%;
     min-width: 1280px;
@@ -10,14 +29,10 @@ body{
 .header {
     width: 100%;
     background-color: #fff;
-    height: 57px;
     line-height: 57px;
-
 }
 .nav {
     width: 100%;
-    max-width: 1280px;
-    margin: 0 auto;
     overflow: hidden;
 }
 .log {
@@ -113,14 +128,272 @@ body{
 	margin-top:55px; 
     width: 330px;
     height: 63px;
-    color: 30px;
+    color: #fff;
     font-family: 微软雅黑;
     background-color: #e74f4d;
     text-align: center;
     letter-spacing: 2px;
 }
 .intro-box {
-	width: 100%;
+    position: relative;
+    margin: 0 auto;
+	width: 1280px;
 	height: 250px;
 	background-color: #fff;
-	}
+}
+.ring,.flag,.flower,.squ {
+    display: inline-block;
+    position: relative;
+    width: 310px;
+
+}
+.icons {
+    position: relative;
+    margin-bottom: 40px;
+    background-size: cover;
+
+}
+.ring .icons {
+    height: 42px;
+    width: 42px;
+    background: url(../imgs/task7-sprite.png) -0px -0px no-repeat;
+}
+.flag .icons {
+    height: 40px;
+    width: 35px;
+    background: url(../imgs/task7-sprite.png) -42px -0px no-repeat;
+}
+.flower .icons {
+    height: 40px;
+    width: 35px;
+    background: url(../imgs/task7-sprite.png) -77px -0px no-repeat;
+}
+.squ .icons {
+    height: 40px;
+    width: 41px;
+    background: url(../imgs/task7-sprite.png) -112px -0px no-repeat;
+}
+.desc {
+    position: relative;
+    background-size: cover;
+    width:154px;
+    font-size: 14px;
+    text-align: center;
+    color:#767777;
+    line-height: inherit;
+}
+.b-r {
+    display: inline-block;
+    position: absolute;
+    top:76%;
+    height: 53px;
+    width: 2px;
+    background-color: #aaa;
+}
+.title {
+    width: 100%;
+    height: 360px;
+    background-color: #ededec;
+    text-align: center;
+}
+.title img {
+    margin-top: 90px;
+    margin-bottom: 45px;
+    width: 100px;
+    height: 88px;
+}
+.title p {
+    text-align: center;
+    font-size: 52px;
+    color:#767777;
+}
+.search {
+    width: 100%;
+    height: 340px;
+    background: url('../imgs/task7-map.png') no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    text-align: center;
+}
+.search h3,.search p {
+    text-align: center;
+    color: #fff;
+    font-weight: normal;
+}
+.search h3 {
+    margin-top: 50px;
+    font-size: 21px;
+}
+.search .w-b {
+    display: inline-block;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+}
+.search>p {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 12px;
+}
+.search ul {
+    list-style: none;
+    text-align: center;
+    font-size: 0;
+}
+.search li {
+    display: inline-block;
+}
+.select label,.search li:last-child input {
+    width: 235px;
+    height: 35px;
+    line-height: 35px;
+    outline:none;
+}
+.search li:last-child input{
+    background-color: #e74f4d;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 24px;
+    text-indent: 24px;
+    vertical-align: sub;
+}
+
+/*
+
+select::-ms-expand { display: none; }!*去除IE默认样式，10以下无效*!
+select {
+    width: 235px;
+    height: 35px;
+    padding-left: 5px;
+    color: #a8aaaa;
+    font-size: 12px;
+    outline:none;
+    border: 1px solid transparent;
+}
+select:hover,select:focus {
+    border: 1px solid #e74f4d;
+}
+.select {
+    position: relative;
+    margin-right: 28px;
+}
+.select i {
+    position: absolute;
+    right: 6px;
+    display: block;
+    width: 19px;
+    height: 18px;
+    background: url('../imgs/task7-select.png') no-repeat;
+}*/
+.select {
+    position: relative;
+    margin-right: 28px;
+    text-align: left;
+}
+.select label{
+    display: inline-block;
+    padding-left: 10px;
+    color: #a8aaaa;
+    font-size: 12px;
+    border: 1px solid transparent;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+.select label:hover {
+    border: 1px solid #e74f4d;
+}
+.select i {
+    position: absolute;
+    right: 6px;
+    display: block;
+    width: 19px;
+    height: 18px;
+    background: url('../imgs/task7-select.png') no-repeat;
+}
+.select input {
+    display: none;
+}
+.select input:checked + label {
+    border: 1px solid #e74f4d;
+    border-bottom: none;
+}
+.options {
+    display: none;
+    position: absolute;
+    width: 235px;
+    background-color: #e3e2e4;
+    border: 1px solid #e74f4d;
+    box-sizing: border-box;
+}
+.select input:checked + label + .options {
+    border-top: none;
+    display: block;
+    cursor: pointer;
+}
+.options p{
+    padding-left: 10px;
+    font-size: 12px;
+    color: #a8aaaa;
+    text-align: left;
+    line-height: 27px;
+}
+.checked {
+    margin-right: 10px;
+    opacity: 0;
+}
+.options p:hover {
+    background-color:#e74f4d;
+    color: #fff;
+}
+.options p:hover .checked {
+    opacity: 1;
+}
+.activity {
+    width: 100%;
+    height: 605px;
+    background-color: #f7f7f7;
+}
+.activity ul{
+    position: relative;
+    width: 1280px;
+    margin: 0 auto;
+    list-style: none;
+    font-size: 0;
+}
+.activity ul li {
+    display: inline-block;
+    width: 320px;
+}
+.activity .img {
+    position: relative;
+    width: 200px;
+    height: 310px;
+    padding: 12px 8px;
+    border:1px solid #dadada;
+    background-size: cover;
+}
+.activity .img1 {
+    background: url('../imgs/task7-photo (1).png') no-repeat center center;
+}
+.activity .img2 {
+    background: url('../imgs/task7-photo (2).png') no-repeat center center;
+}
+.activity .img3 {
+    background: url('../imgs/task7-photo (3).png') no-repeat center center;
+}
+.activity .img4 {
+    background: url('../imgs/task7-photo (4).png') no-repeat center center;
+}
+.activity-title {
+    font-size: 18px;
+    color:#3c3c3c;
+    text-align: center;
+    margin: 10px 0;
+}
+.activity-text {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 12px;
+    color: #a8aaaa;
+}
