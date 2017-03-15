@@ -397,3 +397,335 @@ select:hover,select:focus {
     font-size: 12px;
     color: #a8aaaa;
 }
+.details {
+    width: 100%;
+    height: 44.53125vw;
+}
+.details .left-pic {
+    position: relative;
+    float:left;
+    width: 66.40625%;
+    height: 100%;
+    background: url("../imgs/task7-men.png") no-repeat;
+    background-size: cover;
+    color:#fff;
+    text-align: center;
+}
+.details .right-text {
+    float:left;
+    width: 33.59375%;
+    height:100%;
+    background-color: #fff;
+}
+.details .triangle{
+    position: absolute;
+    right: 0;
+    width: 0;
+    height:0;
+    border:25px solid transparent;
+    border-right-color:#fff;
+}
+.details .pic-text {
+    position: absolute;
+    font-family: '微软雅黑';
+}
+.details .pic-text .line-one {
+    font-size: 50px;
+}
+.details .pic-text .line-two {
+    font-size: 157px;
+}
+.details .pic-text .line-three {
+    margin-top: 15px;
+    font-size: 22px;
+}
+.details .pic-text .line-four {
+    margin-top: 25px;
+    font-size: 20px;
+}
+.details .right-text {
+    text-align: center;
+    font-family: "宋体";
+}
+.details .right-text .text-title {
+    margin-top: 165px;
+    font-weight: bold;
+}
+.details .right-text .text-title span{
+    color: #e25c60;
+}
+.details .right-text .text-cont {
+    margin: 28px auto 50px auto;
+    width: 60%;
+    text-align: left;
+    font-size: 12px;
+    line-height: 30px;
+    color:#aaaaaa;
+}
+.details .right-text .more-btn {
+    width: 107px;
+    height: 35px;
+    color:#e25c60;
+    font-size: 12px;
+    background-color: #fff;
+    border:2px solid #e46669;
+}
+.details .right-text .switch-btn {
+    margin-top: 25px;
+}
+.details .right-text li{
+    display: inline-block;
+    width:12px;
+    height: 12px;
+    background-color: #919292;
+    border-radius:50%;
+}
+.more {
+    width: 100%;
+    height: 40.625vw;
+}
+.more .more-left {
+    position: relative;
+    float:left;
+    width: 33.203125%;
+    height: 100%;
+    background-color: #e74f4d;
+}
+.more .more-middle {
+    position: relative;
+    float:left;
+    width: 33.203125%;
+    height: 100%;
+}
+.more .more-right {
+    position: relative;
+    float:left;
+    width: 33.59375%;
+    height: 100%;
+    background: url("../imgs/task7-girl.png") no-repeat;
+    background-size: cover;
+}
+.more-text {
+    position: absolute;
+    text-align: center;
+    font-size: 21px;
+    line-height: 30px;
+}
+.more-left .more-text{
+    color: #fff;
+}
+.more-line3 {
+    width: 31px;
+    height: 2px;
+}
+.more-left .more-line3 {
+    display: inline-block;
+    background-color: #fff;
+}
+.more-middle .more-line3 {
+    display: inline-block;
+    background-color: #aaaaaa;
+}
+.more-middle .more-text{
+    color: #323333;
+}
+.more-line4 {
+    margin-top: 15px;
+    width: 170px;
+    height: 43px;
+    line-height: 43px;
+    border: 2px solid;
+}
+.more-left .more-line4 {
+    border-color: #fff;
+}
+.more-middle .more-line4 {
+    border-color: #e74f4d;
+    color: #e74f4d;
+}
+.more-triangle {
+    position: absolute;
+    left: 0;
+    width: 0;
+    height:0;
+    border:21px solid transparent;
+    border-left-color:#fff;
+}
+.volunteer {
+    margin: 0 auto;
+    width: 1000px;
+}
+.volunteer .volunteer-title {
+    margin-top: 110px;
+    font-size: 21px;
+    line-height: 30px;
+    color:#323333;
+    text-align: center;
+}
+.volunteer .title-line {
+    margin-bottom: 10px;
+    text-align: center;
+}
+.volunteer .title-line i {
+    display: inline-block;
+    width: 31px;
+    height: 3px;
+    background-color: #e74f4d;
+}
+.volunteer .volunteer-subtitle {
+    margin: 0 auto;
+    width: 425px;
+    font-size: 12px;
+    line-height: 18px;
+    color:#aaaaaa;
+    text-align: center;
+}
+.volunteer .form {
+    margin-top: 105px;
+    overflow: hidden;
+}
+.volunteer .form .clause {
+    float: left;
+    width: 290px;
+}
+.volunteer .form .type-area {
+    float: left;
+    margin-left: 75px;
+    width: 635px;
+}
+.clause {
+    color:#231815;
+
+}
+.clause-title {
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+.clause-cont {
+    font-size: 12px;
+    line-height: 24px;
+}
+.clause-more {
+    margin-bottom: 30px;
+    font-size: 12px;
+    text-align: right;
+}
+.type-area input,.type-area textarea,.type-area button {
+    margin-bottom: 14px;
+    padding: 9px 15px;
+    background-color: #ededef;
+    font-size: 12px;
+    font-family: 黑体;
+    color:#231815;
+    border: none;
+    box-sizing: border-box;
+}
+.type-area input {
+    width: 310px;
+    height: 40px;
+}
+.m-l-7 {
+    margin-left: 7px;
+}
+.type-area textarea {
+    width: 635px;
+    height: 120px;
+    padding: 9px 15px;
+}
+.type-area button {
+    width: 635px;
+    height: 40px;
+}
+.type-area button:hover,.clause-more:hover {
+    cursor: pointer;
+    color: #e74f4d;
+}
+.footer {
+    position: relative;
+    margin-top: 135px;;
+    width: 100%;
+    height: 417px;
+    background-color: #32363e;
+    color: #fff;
+}
+.footer .contact {
+    position: absolute;
+    text-align: center;
+}
+.footer .contact .contact-subtitle {
+    margin: 0 auto;
+    width: 470px;
+    font-size: 12px;
+    line-height: 18px;
+}
+.footer .contact .contact-title {
+    font-size: 21px;
+    line-height: 48px;
+}
+.footer .contact .commit {
+    margin: 30px auto;
+    width: 511px;
+    overflow: hidden;
+}
+.commit input,.commit button {
+    height: 42px;
+    float: left;
+    border: none;
+}
+.footer .contact .commit input{
+    box-sizing: border-box;
+    padding:0 15px;
+    width: 431px;
+}
+.footer .contact .commit button{
+    width: 80px;
+    color: #fff;
+    background-color: #707278;
+    letter-spacing: 10px;
+    text-indent: 10px;
+}
+.footer .contact .commit button:hover {
+    cursor: pointer;
+}
+.footer .back {
+    box-sizing: border-box;
+    position: absolute;
+    padding: 0 140px;
+    bottom: 0;
+    width: 100%;
+    height: 58px;
+    background-color: #2f2f38;
+    line-height: 58px;
+    font-size: 12px;
+}
+.footer .back span:last-child {
+    float: right;
+}
+.footer .icons {
+    font-size: 0;
+}
+.footer .icons li{
+    display: inline-block;
+    margin-right: 28px;
+    height: 25px;
+    background-size: cover;
+}
+.footer .icons li:last-child{
+    margin-right: 0;
+}
+.footer .icons .qq {
+    width: 25px;
+    background: url("../imgs/task7-sprite.png") -184px -0px no-repeat;
+}
+.footer .icons .wbo {
+    width: 29px;
+    background: url("../imgs/task7-sprite.png") -261px -0px no-repeat;
+}
+.footer .icons .twit {
+    width: 29px;
+    background: url("../imgs/task7-sprite.png") -232px -0px no-repeat;
+}
+.footer .icons .earth {
+    width: 25px;
+    background: url("../imgs/task7-sprite.png") -208px -0px no-repeat;
+}
